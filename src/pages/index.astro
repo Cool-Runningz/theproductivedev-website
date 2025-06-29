@@ -1,6 +1,6 @@
 ---
-import WelcomeReact from '../components/Welcome'
 import Layout from '../layouts/Layout.astro';
+import SideNav from '../components/SideNav';
 import "../styles/global.css";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -8,5 +8,5 @@ import "../styles/global.css";
 ---
 
 <Layout>
-	<WelcomeReact />
+	<SideNav client:only="react" />
 </Layout>
