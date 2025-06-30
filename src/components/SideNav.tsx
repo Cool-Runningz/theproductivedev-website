@@ -1,5 +1,5 @@
-import usePathname from '../hooks/usePathname'
-import avatar from '../images/avatar.png'
+import usePathname from '@hooks/usePathname'
+import avatar from '@images/avatar.png'
 
 export default function SideNav() {
 const pathname = usePathname()
