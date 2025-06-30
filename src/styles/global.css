@@ -62,6 +62,8 @@ layer(base);
   --tracking-wide: 0.01em;
   --tracking-wider: 0.02em;
   --tracking-widest: 0.4em;
+
+  --color-wedding-blue: #74c7d5;
 }
 
 /*
