@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Appearances from "@components/Appearances";
 import FeaturedProjects from "@components/FeaturedProjects";
 import { Image } from "astro:assets";
-import profileImage from "@images/profile-image.jpeg";
+import avatar from "@images/avatar.png";
 ---
 
 <Layout>
@@ -13,9 +13,9 @@ import profileImage from "@images/profile-image.jpeg";
       <div class="pt-8 pb-10">
         <Image
           class="mb-5 rounded-full"
-          src={profileImage}
-          width={92}
-          height={92}
+          src={avatar}
+          width={56}
+          height={56}
           priority
           alt="Avatar"
         />
