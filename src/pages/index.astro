@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import RecentPosts from "@components/RecentPosts";
 import Appearances from "@components/Appearances";
 import FeaturedProjects from "@components/FeaturedProjects";
 import { Image } from "astro:assets";
@@ -9,7 +10,7 @@ import avatar from "@images/avatar.png";
 <Layout>
   <!-- Hero -->
   <section>
-    <div class="max-w-[700px]">
+    <div class="max-w-3xl">
       <div class="pt-8 pb-10">
         <Image
           class="mb-5 rounded-full"
@@ -19,16 +20,15 @@ import avatar from "@images/avatar.png";
           priority
           alt="Avatar"
         />
-        <h1 class="h1 font-aspekta mb-5">
-          I create content around <span
-            class="relative inline-flex text-sky-500 before:absolute before:inset-0 before:-z-10 before:translate-y-1/4 before:-rotate-2 before:bg-sky-200 before:opacity-30 dark:before:bg-sky-500"
-            >Programming & Productivity</span
-          > Tips.
+        <h1
+          class="h1 font-aspekta relative mb-5 inline-flex text-sky-500 before:absolute before:inset-0 before:-z-10 before:translate-y-1/4 before:-rotate-2 before:bg-sky-200 before:opacity-30 dark:before:bg-sky-500">
+          The Productive Dev
         </h1>
         <p class="text-lg text-slate-500 dark:text-slate-400">
-          Software developer and writer focused on front-end and accessibility.
-          I share tips, tools, and tutorials to help you build better and work
-          more efficiently.
+          Hey, I'm Alyssa 🙋🏽‍♀️ Front-end developer and writer focused on
+          accessibility and component libraries. I create content around
+          programming & productivity and share tips, tools, and tutorials to
+          help you build better and work more efficiently.
         </p>
       </div>
     </div>
@@ -38,25 +38,11 @@ import avatar from "@images/avatar.png";
   <div class="grow space-y-8 pb-16 md:flex md:space-y-0 md:space-x-8 md:pb-20">
     {/* Middle area */}
     <div class="grow">
-      <div class="max-w-[700px]">
+      <div class="max-w-3xl">
         <div class="space-y-10">
-          <section>
-            <h2 class="font-aspekta mb-3 text-xl font-[650]">
-              Recent Blog Posts
-            </h2>
-          </section>
-
+          <RecentPosts />
           <Appearances />
           <FeaturedProjects />
-
-          {/* Articles list */}
-          <!--  <div>
-                  {allBlogs.map((post, postIndex) => (
-                      <PostItem key={postIndex} {...post} />
-                  ))}
-                </div>
-
-            </div> -->
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 export default function Appearances() {
   return (
     <section>
-      <h2 className="font-aspekta mb-5 text-xl font-[650]">Appearances</h2>
+      <h2 className="font-aspekta mb-5 text-2xl font-[650]">Appearances</h2>
 
       {/* Cards */}
       <div className="grid gap-5 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2">

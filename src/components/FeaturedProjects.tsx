@@ -1,7 +1,7 @@
 export default function FeaturedProjects() {
   return (
     <section>
-      <h2 className="font-aspekta mb-5 text-xl font-[650]">
+      <h2 className="font-aspekta mb-5 text-2xl font-[650]">
         Featured Projects
       </h2>
 
